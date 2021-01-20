@@ -1,0 +1,11 @@
+node_modules/
+testcomp/
+coverage/
+.vscode/
+.nyc_output/
+.git/
+lib/
+.nvs/
+target/
+*.orig
+xunit.xml
