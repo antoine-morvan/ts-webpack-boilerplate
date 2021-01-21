@@ -1,6 +1,6 @@
 {
   "name": "ts-webpack-boilerplate",
-  "version": "0.0.1-SNAPSHOT",
+  "version": "0.0.3-SNAPSHOT",
   "description": "Boilerplate for Typescript to ComonJS to Bundled JS using tsc and webpack, with mocha test coverage and basic",
   "author": "Antoine Morvan",
   "repository": {
@@ -19,6 +19,8 @@
     "tsc-node-test": "tsc --outDir target/output-node-with-test/",
     "webpack-test": "webpack --config .releng/webpack.test.config.js",
     "build": "npm run tsc-node && npm run webpack && npm run tsc-node-test && npm run webpack-test",
+    "comment5": "########################",
+    "package": "npm run clean && tsc -p .releng/tsconfig-cjs-bundle.json --outDir target/src --declaration && cp package.json README.md CHANGELOG.md target/",
     "comment2": "########################",
     "test-nocoverage": "cross-env NODE_ENV=test mocha",
     "test-coverage": "cross-env NODE_ENV=test nyc mocha",
