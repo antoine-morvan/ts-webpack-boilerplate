@@ -9,3 +9,5 @@ export class MyLibrary {
     return this.id;
   }
 }
+
+export default MyLibrary;
